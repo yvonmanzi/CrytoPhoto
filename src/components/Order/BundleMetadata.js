@@ -1,5 +1,5 @@
-import { React } from "react";
-import styled from 'sytled-components';
+import React from "react";
+import styled from 'styled-components';
 
 export default class BundleMetadata extends React.Component {
     render() {

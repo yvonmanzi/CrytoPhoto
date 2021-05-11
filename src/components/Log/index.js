@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Order from '../Order'
 import { OrderSide } from 'opensea-js/lib/types'
-import { connectionWallet } from '../../constants'
+import { connectWallet } from '../../constants'
 
 export default class Log extends React.Component {
     static propTypes = {
@@ -20,7 +20,7 @@ export default class Log extends React.Component {
     }
 
     componentDidMount() {
-        this.fetchDate()
+        this.fetchData()
     }
     async fetchData() {
         const { accountAddress } = this.props
@@ -49,7 +49,7 @@ export default class Log extends React.Component {
     async toggleForMe() {
         const { accountAddress } = this.props
         if (!accountAddress) {
-            await connectionWallet()
+            await connectWallet()
         }
         const { onlyForMe } = this.state
         this.setState({
@@ -75,7 +75,7 @@ export default class Log extends React.Component {
     async toggleByMe() {
         const { accountAddress } = this.props
         if (!accountAddress) {
-            await connectionWallet()
+            await connectWallet()
         }
         const { onlyByMe } = this.state
         this.setState({

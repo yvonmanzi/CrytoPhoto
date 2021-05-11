@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import AssetMetadata from './AssetMetadata'
 import BundleMetadata from './BundleMetadata'
 import { connectWallet } from '../../constants'
-import SalePrice from '../comomon/SalePrice'
+import SalePrice from '../common/SalePrice'
 import { OrderSide } from 'opensea-js/lib/types'
 
 const Card = styled.div.attrs({ className: "card mx-2 mb-4" })`
@@ -27,7 +27,7 @@ export default class Order extends React.Component {
     }
 
     static propTypes = {
-        currentAccount: this.propTypes.object,
+        currentAccount: PropTypes.object,
         order: PropTypes.shape({
             makerAccount: PropTypes.object.isRequired
         }).isRequired,

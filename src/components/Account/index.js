@@ -9,10 +9,10 @@ export default class Account extends React.Component {
         account: ProtoTypes.shape({
             address: ProtoTypes.string.isRequired,
             user: ProtoTypes.shape({
-                username: PropTypes.string.isRequired
+                username: ProtoTypes.string.isRequired
             })
         }).isRequired,
-        showImage: PropTypes.bool
+        showImage: ProtoTypes.bool
     }
     render() {
         const { account, showImage } = this.props

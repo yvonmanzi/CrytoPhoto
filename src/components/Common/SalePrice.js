@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-ocmponents'
-import ProtoTypes from 'proto-types'
+import PropTypes from 'prop-types'
 import { toUnitAmount } from '../../constants'
 
 export default class SalePrice extends React.Component {
-    static protoTypes = {
-        order: propTypes.object.isRequired
+    static propTypes = {
+        order: PropTypes.object.isRequired
     }
 
     render() {
@@ -17,7 +17,11 @@ export default class SalePrice extends React.Component {
 
         return (
             <SpanSalePrice>
-
+                {isETH
+                    ? "Ξ"
+                    : null
+                }
+                {priceLabel} {isETH ? null : paymentTokenContract.symbol}
             </SpanSalePrice>
         )
     }

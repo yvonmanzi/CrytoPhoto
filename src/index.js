@@ -6,7 +6,7 @@ import './index.css'
 import { GOOGLE_ANALYTICS_ID } from './constants'
 
 // Google Analytics 
-if (process.env.NODE_ENV == "production") {
+if (process.env.NODE_ENV === "production") {
     window.dataLayer = window.dataLayer || [];
     function gtag() {
         window.dataLayer.push(arguments);
