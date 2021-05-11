@@ -5,7 +5,7 @@ import { PortisProvider } from 'portis'
 export const GOOGLE_ANALYTICS_ID = 'UA-111688253-4'
 export const OPENSEA_URL = "https://opensea.io"
 export const OPENSEA_JS_URL = "https://github.com/ProjectOpenSea/opensea-js"
-export const GITHUB_URL = "https://github.com/ProjectOpenSea/ships-log"
+export const GITHUB_URL = "https://github.com/yvonmanzi/CrytoPhoto"
 export const DEFAULT_DECIMALS = 18
 export let web3Provider = typeof web3 !== 'undefined'
     ? window.web3.currentProvider

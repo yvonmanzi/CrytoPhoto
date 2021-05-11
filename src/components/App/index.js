@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { web3Provider, onNetworkUpdate, OPENSEA_JS_URL, GITHUB_URL } from '../../constants';
+import { web3Provider, onNetworkUpdate, GITHUB_URL } from '../../constants';
 import Log from '../Log'
 import { OpenSeaPort, Network } from 'opensea-js'
 
@@ -33,12 +33,10 @@ export default class App extends React.Component {
                 </a>
                 <Header>
                     <h1>
-                        CryptoPhotos
+                        CryptoPhoto
                     </h1>
                     <h6>
-                        <a target="_blank" rel="nopener noreferrer" href={OPENSEA_JS_URL}>
-                            <img alt="OpenSea logo" className="mr-2" src="/opensea-logo.png" />OpenSea.js
-                        </a> example dapp
+                        Buy and Sell your photos
                     </h6>
                 </Header>
                 <main>

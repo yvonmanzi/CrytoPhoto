@@ -4,7 +4,7 @@ CrytoPhoto is a decentralized application(dapp) built on top of [OpenSea.js](htt
 
 # How to run it
 
-Execute **nvm use**, if you have Node Version Manager, or install Node.js version 8.11 to make sure dependencies work.
+Execute `nvm use`, if you have Node Version Manager, or install Node.js version 8.11 to make sure dependencies work.
 
 Then, to install dependencies:
 
